@@ -1,9 +1,29 @@
 {
 	"Media":{
-		"capacity":2,
+		"capacity":1,
 		"type":"separate"
 	},
+	"Transcode":{
+		"capacity":1,
+		"type":"separate"
+	},
+	"Graphics":{
+		"capacity":1,
+		"type":"separate"
+	},
+	"Audio":{
+		"capacity":1,
+		"type":"separate"
+	},
+	"Subtitles":{
+		"capacity":1,
+		"type":"common"
+	},
 	"Meta":{
+		"capacity":1,
+		"type":"common"
+	},
+	"Track":{
 		"capacity":1,
 		"type":"common"
 	}
