@@ -9,7 +9,6 @@ import (
 )
 
 type Track struct {
-  mediaPath string
 }
 
 func (t Track) Process(filepath string, postProcess func()) {

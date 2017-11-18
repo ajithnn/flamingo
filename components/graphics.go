@@ -9,7 +9,6 @@ import (
 )
 
 type Graphic struct {
-  mediaPath string
 }
 
 func (g Graphic) Process(filepath string, postProcess func()) {

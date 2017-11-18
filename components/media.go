@@ -9,7 +9,6 @@ import (
 )
 
 type Media struct {
-  mediaPath string
 }
 
 func (m Media) Process(filepath string, postProcess func()) {

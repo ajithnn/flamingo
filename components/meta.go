@@ -8,7 +8,6 @@ import (
 )
 
 type Meta struct {
-  metaPath string
 }
 
 func (m Meta) Process(filepath string, postProcess func()) {

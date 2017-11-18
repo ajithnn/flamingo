@@ -9,7 +9,6 @@ import (
 )
 
 type Subtitle struct {
-  mediaPath string
 }
 
 func (s Subtitle) Process(filepath string, postProcess func()) {

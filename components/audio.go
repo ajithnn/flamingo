@@ -9,7 +9,6 @@ import (
 )
 
 type Audio struct {
-  mediaPath string
 }
 
 func (a Audio) Process(filepath string, postProcess func()) {

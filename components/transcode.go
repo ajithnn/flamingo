@@ -9,7 +9,6 @@ import (
 )
 
 type Transcode struct {
-  mediaPath string
 }
 
 func (t Transcode) Process(filepath string, postProcess func()) {
