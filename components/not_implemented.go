@@ -5,6 +5,7 @@ import (
 )
 
 type NotImplemented struct {
+  path string
 }
 
 func (m NotImplemented) Process(filepath string,postProcess func()) {

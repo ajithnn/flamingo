@@ -1,8 +1,16 @@
 {
-	"ImportPath": "github.com/ajithnn/go-flow",
-	"GoVersion": "go1.6",
+	"ImportPath": "github.com/ajithnn/flamingo",
+	"GoVersion": "go1.8",
 	"GodepVersion": "v79",
 	"Deps": [
+		{
+			"ImportPath": "github.com/ajithnn/go-flow/flow",
+			"Rev": "6f6a544f5f4297fc7ab6bca5974f9ee9cffb475e"
+		},
+		{
+			"ImportPath": "github.com/ajithnn/go-flow/scanner",
+			"Rev": "6f6a544f5f4297fc7ab6bca5974f9ee9cffb475e"
+		},
 		{
 			"ImportPath": "github.com/golang/glog",
 			"Rev": "23def4e6c14b4da8ac2ed8007337bc5eb5007998"
