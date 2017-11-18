@@ -10,7 +10,7 @@ import (
   "time"
 )
 
-func Init(){
+func init(){
   flag.Parse()
 }
 
@@ -35,10 +35,16 @@ func main(){
   }
 
   timeOut,err := strconv.ParseFloat(inputArgs[3],64)
+
+  if err != nil {
+    glog.V(2).Info(" Timeout Invalid Parameters")
+    os.Exit(0)
+  }
+
   scanTimeOut,err := time.ParseDuration(inputArgs[4])
 
   if err != nil {
-    glog.V(2).Info("Invalid Parameters")
+    glog.V(2).Info("Scan Timeout Invalid Parameters")
     os.Exit(0)
   }
 
