@@ -5,15 +5,59 @@
 	"Deps": [
 		{
 			"ImportPath": "github.com/ajithnn/go-flow/flow",
-			"Rev": "e966d2ed9bcfe9a1b84baf5f81cd99bf0d3c88e2"
+			"Rev": "bb3b1ce5e5c37daace01f5f0a655faa8302f846a"
 		},
 		{
 			"ImportPath": "github.com/ajithnn/go-flow/scanner",
-			"Rev": "e966d2ed9bcfe9a1b84baf5f81cd99bf0d3c88e2"
+			"Rev": "bb3b1ce5e5c37daace01f5f0a655faa8302f846a"
+		},
+		{
+			"ImportPath": "github.com/go-ini/ini",
+			"Comment": "v1.32.0",
+			"Rev": "32e4c1e6bc4e7d0d8451aa6b75200d19e37a536a"
 		},
 		{
 			"ImportPath": "github.com/golang/glog",
 			"Rev": "23def4e6c14b4da8ac2ed8007337bc5eb5007998"
+		},
+		{
+			"ImportPath": "github.com/minio/go-homedir",
+			"Rev": "21304a94172ae3a09dee2cd86a12fb6f842138c7"
+		},
+		{
+			"ImportPath": "github.com/minio/minio-go",
+			"Comment": "4.0.3-6-gadc7764",
+			"Rev": "adc77640da8b3aecc376e769745965bed3fc1fb9"
+		},
+		{
+			"ImportPath": "github.com/minio/minio-go/pkg/credentials",
+			"Comment": "4.0.3-6-gadc7764",
+			"Rev": "adc77640da8b3aecc376e769745965bed3fc1fb9"
+		},
+		{
+			"ImportPath": "github.com/minio/minio-go/pkg/encrypt",
+			"Comment": "4.0.3-6-gadc7764",
+			"Rev": "adc77640da8b3aecc376e769745965bed3fc1fb9"
+		},
+		{
+			"ImportPath": "github.com/minio/minio-go/pkg/policy",
+			"Comment": "4.0.3-6-gadc7764",
+			"Rev": "adc77640da8b3aecc376e769745965bed3fc1fb9"
+		},
+		{
+			"ImportPath": "github.com/minio/minio-go/pkg/s3signer",
+			"Comment": "4.0.3-6-gadc7764",
+			"Rev": "adc77640da8b3aecc376e769745965bed3fc1fb9"
+		},
+		{
+			"ImportPath": "github.com/minio/minio-go/pkg/s3utils",
+			"Comment": "4.0.3-6-gadc7764",
+			"Rev": "adc77640da8b3aecc376e769745965bed3fc1fb9"
+		},
+		{
+			"ImportPath": "github.com/minio/minio-go/pkg/set",
+			"Comment": "4.0.3-6-gadc7764",
+			"Rev": "adc77640da8b3aecc376e769745965bed3fc1fb9"
 		}
 	]
 }

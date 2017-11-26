@@ -37,14 +37,14 @@ func main(){
   timeOut,err := strconv.ParseFloat(inputArgs[3],64)
 
   if err != nil {
-    glog.V(2).Info(" Timeout Invalid Parameters")
+    glog.V(2).Infof(" Timeout Invalid Parameters")
     os.Exit(0)
   }
 
   scanTimeOut,err := time.ParseDuration(inputArgs[4])
 
   if err != nil {
-    glog.V(2).Info("Scan Timeout Invalid Parameters")
+    glog.V(2).Infof("Scan Timeout Invalid Parameters")
     os.Exit(0)
   }
 
@@ -58,7 +58,7 @@ func main(){
     GetPrioritizedList,
   }
 
-  glog.V(2).Info("Starting Flow Service")
+  glog.V(2).Infof("Starting Flow Service")
   flow.Trigger(config)
 
 }

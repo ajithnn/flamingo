@@ -13,6 +13,6 @@ type Subtitle struct {
 
 func (s Subtitle) Process(filepath string, postProcess func()) {
   defer postProcess()
-  glog.V(2).Info("File path ", filepath, " Media file is being processed.")
+  glog.V(2).Infof("File path ", filepath, " Media file is being processed.")
   return
 }
