@@ -5,11 +5,11 @@
 	"Deps": [
 		{
 			"ImportPath": "github.com/ajithnn/go-flow/flow",
-			"Rev": "bb3b1ce5e5c37daace01f5f0a655faa8302f846a"
+			"Rev": "f35bdb04c52658b3f68f8f8c34e7e99b6411ac2d"
 		},
 		{
 			"ImportPath": "github.com/ajithnn/go-flow/scanner",
-			"Rev": "bb3b1ce5e5c37daace01f5f0a655faa8302f846a"
+			"Rev": "f35bdb04c52658b3f68f8f8c34e7e99b6411ac2d"
 		},
 		{
 			"ImportPath": "github.com/go-ini/ini",
