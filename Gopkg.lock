@@ -2,9 +2,10 @@
 
 
 [[projects]]
+  branch = "master"
   name = "github.com/ajithnn/go-flow"
   packages = ["flow","scanner"]
-  revision = "f35bdb04c52658b3f68f8f8c34e7e99b6411ac2d"
+  revision = "388a03fb50dd083675735569d4c7a327825d6484"
 
 [[projects]]
   branch = "master"
@@ -56,6 +57,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "9274a850c58e85dda7092565c0c996d7dcad50142d8c6cfda79e474446063633"
+  inputs-digest = "fcdc0880ab4c4df088d2f627118edf4410fb778c829817d04f3c970fee4d2477"
   solver-name = "gps-cdcl"
   solver-version = 1
