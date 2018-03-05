@@ -1,10 +1,23 @@
 {
 	"Media":{
 		"capacity":2,
-		"type":"separate"
+		"type":"separate",
+    "config":{
+      "access_key":"",
+      "secret":""
+      "bucket":"",
+      "inbox_path":"",
+      "outbox_path":""
+    }
 	},
 	"Meta":{
 		"capacity":1,
-		"type":"common"
+		"type":"common",
+    "config":{
+      "access_key":"",
+      "secret":"",
+      "inbox_path":"",
+      "outbox_path":""
+    }
 	}
 }
