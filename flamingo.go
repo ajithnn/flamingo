@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"github.com/ajithnn/flamingo/components"
-	"github.com/ajithnn/go-flow/flow"
+	"github.com/ajithnn/nadi/flow"
 	"github.com/golang/glog"
 	"os"
 	"strconv"
