@@ -11,25 +11,32 @@ type Media struct {
 	mediaPath string
 }
 
-func (m Media) Process(filepath string, postProcess func()) {
+func (m Media) Process(filepath string, config interface{}, postProcess func()) {
 	defer postProcess()
 	glog.V(2).Infof("File path %s Media file is being processed.", filepath)
 
+	parsedConfig := config.(map[string]interface{})
+	inbox := parsedConfig["inbox_path"].(string)
+	outbox := parsedConfig["outbox_path"].(string)
+
+	glog.V(2).Infof("Parsed Config Inbox is %s Outbox is %s.", inbox, outbox)
+
 	state, err := GetAssetState(filepath)
+
 	switch state.Status {
 	case "new":
 		// Start Uploading
-		status, err := UploadFile(filepath, os.Getenv("S3_UPLOAD_KEY"), os.Getenv("S3_UPLOAD_SECRET"))
+		status, err := UploadFile(filepath, parsedConfig["access_key"].(string), parsedConfig["secret"].(string), parsedConfig["bucket"].(string))
 		if err != nil {
 			glog.V(2).Infof("Error Uploading file, marking failed.")
 			state.Status = "failed"
 			UpdateAsset(state)
-			err = os.Rename(filepath, path.Join("./Inbox", "Track", path.Base(filepath)))
+			err = os.Rename(filepath, path.Join(outbox, path.Base(filepath)))
 		}
 		if status {
 			newPath := path.Dir(path.Dir(filepath))
 			glog.V(2).Infof("Completed Upload moving to Track ", newPath)
-			err = os.Rename(filepath, path.Join(newPath, "Track", path.Base(filepath)))
+			err = os.Rename(filepath, path.Join(outbox, path.Base(filepath)))
 		}
 	case "uploading":
 		// Start Move to Track Folder

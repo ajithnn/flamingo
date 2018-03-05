@@ -24,7 +24,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	typeMap := map[string]flow.Asset{
+	typeMap := map[string]flow.Stage{
 		"Media":     components.Media{},
 		"Meta":      components.Meta{},
 		"Transcode": components.Transcode{},

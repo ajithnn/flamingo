@@ -7,6 +7,8 @@ import (
 	"github.com/minio/minio-go"
 	"io"
 	"os"
+	"path"
+	"strings"
 	"sync"
 	"sync/atomic"
 	"time"
@@ -80,12 +82,13 @@ func GetAssetState(filepath string) (State, error) {
 }
 
 func getObjectKeyFromFilepath(filepath string) string {
-	return "Media/ASDF.ts"
+	return strings.Replace(filepath, path.Dir(path.Dir(filepath))+"/", "", -1)
 }
 
-func UploadFile(filepath, key, secret string) (bool, error) {
+func UploadFile(filepath, key, secret, bucket string) (bool, error) {
 	ssl := true
 	var wg sync.WaitGroup
+
 	objectKey := getObjectKeyFromFilepath(filepath)
 	s3Client, err := minio.New("s3.amazonaws.com", key, secret, ssl)
 	if err != nil {
@@ -113,7 +116,7 @@ func UploadFile(filepath, key, secret string) (bool, error) {
 
 	go progress.PrintValue(&wg)
 
-	bytesUploaded, err := s3Client.PutObject("ajith-personal-new", objectKey, file, fileStat.Size(), minio.PutObjectOptions{
+	bytesUploaded, err := s3Client.PutObject(bucket, objectKey, file, fileStat.Size(), minio.PutObjectOptions{
 		ContentType: "application/octet-stream",
 		Progress:    &progress,
 	})

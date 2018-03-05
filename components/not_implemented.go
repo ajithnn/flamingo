@@ -5,10 +5,10 @@ import (
 )
 
 type NotImplemented struct {
-  path string
+	path string
 }
 
-func (m NotImplemented) Process(filepath string,postProcess func()) {
-  glog.V(2).Infof("Type not implemented, Please configure in pipes.json and components/asset.go files for path %s",filepath)
-  postProcess()
+func (m NotImplemented) Process(filepath string, config interface{}, postProcess func()) {
+	glog.V(2).Infof("Type not implemented, Please configure in pipes.json and components/asset.go files for path %s", filepath)
+	postProcess()
 }
