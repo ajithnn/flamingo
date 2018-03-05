@@ -4,8 +4,14 @@
 [[projects]]
   branch = "master"
   name = "github.com/ajithnn/go-flow"
-  packages = ["flow","scanner"]
-  revision = "388a03fb50dd083675735569d4c7a327825d6484"
+  packages = ["flow"]
+  revision = "a0316424e8fa44102228c28e3361c19b96cd0551"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/ajithnn/sense"
+  packages = ["."]
+  revision = "73856f1375f529691e6fd6a87d5545894d606a7e"
 
 [[projects]]
   branch = "master"
@@ -26,15 +32,16 @@
   revision = "23def4e6c14b4da8ac2ed8007337bc5eb5007998"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/minio/go-homedir"
-  packages = ["."]
-  revision = "4d76aabb80b22bad8695d3904e943f1fb5e6199f"
-
-[[projects]]
   name = "github.com/minio/minio-go"
   packages = [".","pkg/credentials","pkg/encrypt","pkg/policy","pkg/s3signer","pkg/s3utils","pkg/set"]
-  revision = "adc77640da8b3aecc376e769745965bed3fc1fb9"
+  revision = "c645fb54e4d1f75680ccd4035228f004ae0f55cb"
+  version = "4.0.8"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/mitchellh/go-homedir"
+  packages = ["."]
+  revision = "b8bc1bf767474819792c23f32d8286a45736f1c6"
 
 [[projects]]
   name = "github.com/sirupsen/logrus"
@@ -46,13 +53,25 @@
   branch = "master"
   name = "golang.org/x/crypto"
   packages = ["ssh/terminal"]
-  revision = "94eea52f7b742c7cbe0b03b22f0c4c8631ece122"
+  revision = "91a49db82a88618983a78a06c1cbd4e00ab749ab"
+
+[[projects]]
+  branch = "master"
+  name = "golang.org/x/net"
+  packages = ["idna","lex/httplex"]
+  revision = "22ae77b79946ea320088417e4d50825671d82d57"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix","windows"]
-  revision = "53aa286056ef226755cd898109dbcdaba8ac0b81"
+  revision = "dd2ff4accc098aceecb86b36eaa7829b2a17b1c9"
+
+[[projects]]
+  name = "golang.org/x/text"
+  packages = ["collate","collate/build","internal/colltab","internal/gen","internal/tag","internal/triegen","internal/ucd","language","secure/bidirule","transform","unicode/bidi","unicode/cldr","unicode/norm","unicode/rangetable"]
+  revision = "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
+  version = "v0.3.0"
 
 [solve-meta]
   analyzer-name = "dep"
