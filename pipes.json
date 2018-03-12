@@ -4,10 +4,16 @@
 		"type":"separate",
     "config":{
       "access_key":"",
-      "secret":""
+      "secret":"",
       "bucket":"",
-      "inbox_path":"",
-      "outbox_path":""
+      "api_base":"",
+      "token":"",
+      "feed_id":"",
+      "account_domain":"",
+      "account_id":"",
+      "in_path":"",
+      "out_path":"",
+      "err_path":""
     }
 	},
 	"Meta":{
@@ -16,8 +22,14 @@
     "config":{
       "access_key":"",
       "secret":"",
-      "inbox_path":"",
-      "outbox_path":""
+      "api_base":"",
+      "token":"",
+      "feed_id":"",
+      "account_domain":"",
+      "account_id":"",
+      "in_path":"",
+      "out_path":"",
+      "err_path":""
     }
 	}
 }
