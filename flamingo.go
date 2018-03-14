@@ -25,13 +25,9 @@ func main() {
 	}
 
 	typeMap := map[string]flow.Stage{
-		"Media":     components.Media{},
-		"Meta":      components.Meta{},
-		"Transcode": components.Transcode{},
-		"Graphics":  components.Graphic{},
-		"Subtitles": components.Subtitle{},
-		"Audio":     components.Audio{},
-		"Track":     components.Track{},
+		"Video": components.Video{},
+		"Meta":  components.Meta{},
+		"Track": components.Track{},
 	}
 
 	timeOut, err := strconv.ParseFloat(inputArgs[3], 64)

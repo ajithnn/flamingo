@@ -8,9 +8,8 @@
       "bucket":"",
       "api_base":"",
       "token":"",
-      "feed_id":"",
-      "account_domain":"",
-      "account_id":"",
+      "id":"",
+      "domain":"",
       "in_path":"",
       "out_path":"",
       "err_path":""
@@ -24,9 +23,8 @@
       "secret":"",
       "api_base":"",
       "token":"",
-      "feed_id":"",
-      "account_domain":"",
-      "account_id":"",
+      "id":"",
+      "domain":"",
       "in_path":"",
       "out_path":"",
       "err_path":""
